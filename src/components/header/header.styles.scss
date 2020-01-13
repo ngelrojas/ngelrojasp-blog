@@ -1,0 +1,47 @@
+.nav-wrapper{
+    background-color: #dddddd;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+
+    .header{
+        position: relative;
+        .header__wrapp-logo{
+            position: absolute;
+            width: 15%;
+            float: left;
+            .wrapp-logo__wrapper-logo{
+                float: right;
+                .logo{
+                    img{
+                        width: 60%; 
+                    } 
+                } 
+            } 
+        }
+
+       .header__wrapp-form-search{
+            width: 70%;
+            float: right;
+            .wrapper-form{
+                .form{
+                    .input{
+                        border: 0px;
+                        border-color: #dddddd;
+                        width: 70%;
+                        height: 35px;
+                        margin-right: -3px; 
+                    }
+                   .btn{
+                        border: 0px;
+                        color: #dddddd;
+                        text-transform: uppercase; 
+                   }
+                   .btn-search{
+                        padding: 0.76%;
+                        background-color: #A91B28; 
+                   } 
+                } 
+            } 
+       } 
+    }
+}
