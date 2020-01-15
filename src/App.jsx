@@ -4,6 +4,7 @@ import Header from './components/header/header.component.jsx';
 import NavMenu from './components/nav/nav.component.jsx';
 import Home from './pages/home/home.component.jsx';
 import AboutMe from './pages/about/about.component.jsx';
+import DescripComponent from './pages/description/description.component.jsx';
 
 
 export const App = () => (
@@ -15,7 +16,8 @@ export const App = () => (
 
             <Switch>
                 <Route exact path="/" component={Home}></Route>
-                <Route path="/angel-rojas" component={AboutMe}></Route>
+                <Route path="/about-me" component={AboutMe}></Route>
+                <Route path="/topic/:slug" component={DescripComponent}></Route>
             </Switch>
 
        </Router>

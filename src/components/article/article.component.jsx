@@ -6,12 +6,13 @@ import NextComponent from './assets/next.component.jsx';
 import './article.styles.scss';
 
 
-const Article = ({id, title, excerpt, author, data, url_read_more}) => (
+const Article = ({id, title, excerpt, author, data, url_read_more}) =>(
+    
     <div className="wrap-art">
         <div className="wrapper-art-item">
             <div className="art-item-head">
                 <h6>
-                    <Link to={url_read_more}>{title.toUpperCase()}</Link>
+                    <Link to={`/topic/${url_read_more}`}>{title.toUpperCase()}</Link>
                 </h6>
                 <div className="art-item-author">
                     <p className="art author">
@@ -25,7 +26,7 @@ const Article = ({id, title, excerpt, author, data, url_read_more}) => (
             </div>
             <div className="art-item-excerpt">
                 <p>
-                    <Link to={url_read_more}>
+                    <Link to={`/topic/${url_read_more}`}>
                         {excerpt}
                     </Link>
                 </p>
@@ -39,7 +40,7 @@ const Article = ({id, title, excerpt, author, data, url_read_more}) => (
                         <Link to="#"><HeartComponent className="icon-link" /></Link>
                     </li>
                     <li className="links-item">
-                        <Link to={url_read_more}><NextComponent className="icon-link" /></Link>
+                        <Link to={`/topic/${url_read_more}`}><NextComponent className="icon-link" /></Link>
                     </li>
                 </ul>
             </div>
