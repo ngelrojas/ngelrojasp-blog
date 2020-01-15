@@ -1,10 +1,20 @@
 .nav-menu{
+   overflow: hidden;
+   position: fixed;
+   top: 200px;
+   left: 35px;
    .wrapper-menu{
         margin-top: 45%;
         .menu__item{
             margin-left: 2%;
-            margin-top: 40%;
-            margin-bottom: 40%; 
+            margin-top: 90%;
+            margin-bottom: 90%;
+            a{
+                .logo{
+                    width: 40px;
+                    height: 40px; 
+                } 
+            } 
         } 
    } 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import arlogo from '../../assets/ar-logo.png';
+import ARComponent from './assets/logo.component.jsx';
 import './header.styles.scss';
 
 
@@ -9,7 +9,7 @@ const Header = () => (
         <div className="header">
             <div className="header__wrapp-logo">
                 <figure className="wrapp-logo__wrapper-logo">
-                    <Link to='/' className="logo"><img src={arlogo} className="logo"/></Link>            
+                    <Link to='/' className="logo"><ARComponent className="logo-ar"/></Link>            
                 </figure>
     
             </div>

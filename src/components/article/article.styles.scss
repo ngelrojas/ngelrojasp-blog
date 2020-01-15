@@ -1,0 +1,83 @@
+.wrap-art{
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 1px 2px 8px 1px #797877; 
+    }
+    width: 67%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #ffffff;
+    padding: 1%;
+    .wrapper-art-item{
+        .art-item-head{
+            width: 200px;
+            float: left;
+            height: 97px;
+            margin-top: 2%;
+            h6{
+                a{
+                    text-decoration: none;
+                    color: #A91B28;
+                }
+                text-align: left; 
+            }
+            .art{
+                margin-bottom: 5px; 
+            }
+            .art-item-author{
+                width: 200px;
+                margin-top: 8%;
+                .author, .data{
+                    color: #595959;
+                    font-size: 15px;
+                    .title-author{
+                        float: left;
+                        font-size: 13px; 
+                    }
+                    .content-author{
+                        float: right;
+                        margin-right: 8%;
+                        font-size: 13px; 
+                    } 
+                }     
+            }
+        }
+        .art-item-excerpt{
+            width: 401px;
+            float: left;
+            margin-bottom: 4%;
+            margin-top: 2%;
+            p{
+                a{
+                    color: #595959;
+                    text-decoration: none;
+                }
+                 
+            } 
+        }
+        .art-item-links{
+            width: 100%;
+            height: 27px;
+            overflow: hidden;
+            margin: 0 auto;
+            .list-links{
+                margin-left: 25%;
+                .links-item{
+                    display: inline;
+                    margin-right: 7%;
+                    margin-left: 7%;
+                    a{
+                        .icon-link{
+                            width: 25px;
+                            height: 25px; 
+                        } 
+                    } 
+                } 
+            } 
+        }
+         
+    }
+}
