@@ -20,7 +20,7 @@ class ListArticles extends React.Component{
                 excerpt: ' Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. An the other form you can choose your destiny beyond the nature be. ',
                 author: 'ngel rojas',
                 data: '2020-1-10',
-                url_read_more: 'python-for-data-science'
+                url_read_more: 'how-to-build-an-api-restful-using-drfdjango-rest-framework-part-1'
                 }, 
                 {
                 id: 2, 
@@ -28,7 +28,7 @@ class ListArticles extends React.Component{
                 excerpt: ' Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. An the other form you can choose your destiny beyond the nature be. ',
                 author: 'ngel rojas',
                 data: '2020-1-10',
-                url_read_more: 'python-data-sicence-part-one-stay-tunned'
+                url_read_more: 'how-to-build-an-api-restful-using-drfdjango-rest-framework-part-1'
                 }, 
                 {
                 id: 3, 
@@ -36,7 +36,7 @@ class ListArticles extends React.Component{
                 excerpt: ' Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. An the other form you can choose your destiny beyond the nature be. ',
                 author: 'ngel rojas',
                 data: '2020-1-10',
-                url_read_more: 'python-data'
+                url_read_more: 'how-to-build-an-api-restful-using-drfdjango-rest-framework-part-1'
                 }, 
                 {
                 id: 4, 
@@ -44,7 +44,7 @@ class ListArticles extends React.Component{
                 excerpt: ' Apart from counting words and characters, our online editor can help you to improve word choice and writing style, and, optionally, help you to detect grammar mistakes and plagiarism. An the other form you can choose your destiny beyond the nature be. ',
                 author: 'ngel rojas',
                 data: '2020-1-10',
-                url_read_more: 'data-for-scientis-here-like-you'
+                url_read_more: 'how-to-build-an-api-restful-using-drfdjango-rest-framework-part-1'
                 } 
             ]
         }
