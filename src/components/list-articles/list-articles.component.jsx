@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Article from '../article/article.component.jsx';
 import BackComponent from './assets/back.component.jsx';
 import ForwardComponent from './assets/forward.component.jsx';
+import PATH from '../../config/config.jsx';
 import './list-articles.styles.scss';
 
 
@@ -13,6 +14,8 @@ class ListArticles extends React.Component{
         this.state = {
             fields: {},
             msg: {},
+            isLoading: false,
+            data_post: [],
             sections: [
                 {
                 id: 1, 
@@ -50,14 +53,35 @@ class ListArticles extends React.Component{
         }
     }
 
+    componentDidMount(){
+        this.setState({isLoading: true})
+        let data_art = fetch(PATH+'api/articles/', {mode: 'no-cors'});
+        data_art.then(response=>{
+            console.log(response); 
+        }).then(response=>{
+            console.log(response) 
+        }).then(res=>{
+            console.log(res); 
+        })
+    }
+
     render(){
+
+        if(this.state.isLoading){
+            return(
+                <div className="wrap-list-articles">
+                    <div className="list-articles"><h1 className="loading">LOADING...</h1></div>
+                </div>
+            ) 
+        }
+
         return(
         <div className="wrap-list-articles">
             <div className="list-articles">
                 
                 {
-                    this.state.sections.map(({id, ...otherSectionProps}) =>(
-                        <Article key={id} { ...otherSectionProps } /> 
+                    this.state.data_post.map(({idart, ...otherSectionProps}) =>(
+                        <Article key={idart} { ...otherSectionProps } /> 
                     )) 
                 }
                 

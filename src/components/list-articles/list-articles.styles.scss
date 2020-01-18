@@ -1,4 +1,12 @@
-.list-articles{
-    width: 43%;
-    margin: 0 auto;
+.wrap-list-articles{
+     margin-left: -8%;
+    .list-articles{
+        .loading{
+            margin-top: 5%;
+            margin-bottom: 5%;  
+        }
+        width: 40%;
+        margin: 0 auto;
+    }
 }
+
