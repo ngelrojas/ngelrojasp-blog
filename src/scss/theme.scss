@@ -1,6 +1,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #eeeeee;
+    a{
+        text-decoration: none; 
+    }
 }
 .main__container{
     display: grid;

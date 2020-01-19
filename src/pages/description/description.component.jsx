@@ -17,7 +17,7 @@ class DescripComponent extends React.Component{
     componentDidMount(){
         this.setState({isLoading: true})
         let slug = this.props.match.params.slug
-        fetch(PATH+'api/articles/'+slug)
+        window.fetch(PATH+'api/articles/'+slug)
         .then(response => {
              return response.json(); 
         })
