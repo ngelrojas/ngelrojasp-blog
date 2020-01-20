@@ -7,7 +7,8 @@ import TwitterComponent from './assets/twitter.component.jsx';
 import FComponent from './assets/f.component.jsx';
 import './about.styles.scss';
 
-const AboutMe = () => (
+const AboutMe = () => {
+return(
     <main>
         <div className="aboutme">
             <div className="aboutme__card">
@@ -17,21 +18,26 @@ const AboutMe = () => (
                     </figure>
                 </div>
                 <div className="aboutme__content">
-                    <div className="name"><h1>Angel O. Rojas P.</h1></div>
+                    <div className="name">
+                        <h1>Angel O. Rojas P.</h1>
+                        <h1 className="title">Software Architect</h1>
+                    </div>
                     <div className="emails">
                         <h1 className="one">me@ngelrojasp.com</h1>
                         <h1 className="two">aomarrojasp@gmail.com</h1>
                     </div>
                     <div className="social-networks">
-                        <ul>
-                            <li> <Link to='/'><GitHubComponent className="social-icons"/></Link></li>
-                            <li> <Link to='/'><LinkedInComponent className="social-icons" /></Link></li>
-                            <li> <Link to='/'><TwitterComponent className="social-icons" /></Link></li>
-                            <li> <Link to='/'><FComponent className="social-icons"/></Link></li>
-                        </ul> 
+                         
                     </div>
                 </div>
-                <div className="aboutme__share">share</div>
+                <div className="aboutme__share">
+                    <ul>
+                        <li> <Link to='https://github.com/ngelrojasp'><GitHubComponent className="social-icons"/></Link></li>
+                        <li> <Link to='/'><LinkedInComponent className="social-icons" /></Link></li>
+                        <li> <Link to='/'><TwitterComponent className="social-icons" /></Link></li>
+                        <li> <Link to='/'><FComponent className="social-icons"/></Link></li>
+                    </ul>
+                </div>
             </div>
             <div className="aboutme__words">
                 <h1 className="title">Hi, how is it going on...! ;)</h1>
@@ -42,10 +48,10 @@ const AboutMe = () => (
                 </h1>
             </div>
             <div className="aboutme__btn"> 
-               <button>my resume</button>
+                <Link to="/public/angel-rojas.pdf" target="_blank" className="btn-download" download>my resume</Link>
             </div>
         </div>
     </main>
-);
+)};
 
 export default AboutMe;

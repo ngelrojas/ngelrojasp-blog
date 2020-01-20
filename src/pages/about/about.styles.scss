@@ -7,49 +7,77 @@
     }
     .aboutme__card{
         display: grid;
-        grid-template-columns: 22% 70% 10%;
-        grid-template-rows: 50px 200px 50px;
-        width: 664px;
+        grid-template-columns: 22% 70% auto;
+        grid-template-rows: auto auto auto;
+        width: 45%;
         margin: 0 auto;
         padding: 1%;
         background-color: #ffffff;
-        height: 254px;
+        height: 240px;
         .aboutme__me{
             grid-row: 1 / 4;
             text-align: center;
             figure{
-                margin-top: 30%; 
+                margin-top: 30%;
+                img{
+                    border: 3px solid #A91B28;
+                    border-radius: 50%;
+                    background: #A91B28; 
+                } 
             } 
         }
         .aboutme__content{
             grid-row: 1 / 4;
-            padding: 3%;
+            padding-top: 3%;
+            padding-left: 18%;
             .name{
                 margin-top: 10%;
                 h1{
-                    margin-bottom: 2%; 
+                    margin-bottom: 3%;
+                    color:#A91B28;
+                    text-transform: uppercase;
+                    text-align: center; 
+                }
+                .title{
+                    font-size: 11px;
+                    color: #000000;
+                    letter-spacing: 7px; 
                 } 
             }
             .emails{
-                margin-top: 5%;
+                margin-top: 20%;
                 h1{
-                    margin-top: 1%;
-                    margin-bottom: 4%; 
+                    margin-top: 5%;
+                    margin-bottom: 4%;
+                    color:#A91B28; 
+                } 
+            }
+            .social-networks{
+                grid-row: 1 / 4;
+                margin-top: 15%;
+                ul{
+                    li{
+                        display: inline;
+                        margin-left: 4%;
+                        margin-right: 4%;
+                        .social-icons{
+                            width: 30px;
+                            height: 30px; 
+                        } 
+                    } 
                 } 
             }
         }
-        .social-networks{
-            grid-row: 1 / 4;
-            margin-top: 15%;
-            ul{
-                li{
-                    display: inline;
-                    margin-left: 4%;
-                    margin-right: 4%;
-                    .social-icons{
-                        width: 40px;
-                        height: 40px; 
-                    } 
+         
+    }
+    .aboutme__share{
+        ul{
+            li{
+                margin-top: 40%;
+                text-align: center;
+                .social-icons{
+                    width: 30px;
+                    height: 30px; 
                 } 
             } 
         } 
@@ -74,6 +102,13 @@
     .aboutme__btn{
         grid-column: 1 / span 4;
         width: 664px;
-        margin: 0 auto; 
+        margin: 0 auto;
+        .btn-download{
+            border: none;
+            background: #A91B28;
+            color: #dddddd;
+            padding: 2%;
+            text-transform: uppercase 
+        } 
     }
 }
