@@ -1,17 +1,19 @@
-import React, {useContext} from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import ShareComponent from './assets/share.component.jsx';
-import HeartComponent from './assets/heart.component.jsx';
 import NextComponent from './assets/next.component.jsx';
 import { FavBtn } from '../favbtn/favbtn.component.jsx';
+import { useLocalStorage } from '../../hooks/LocalStorage.component.jsx';
 import './article.styles.scss';
 
 
 export const Article = ({id, art_title, art_title_slug, art_excerpt, created_at}) =>{
-    const liked = 1 
+    
+    const key = `like-${id}`; 
+    const [liked, setLiked] = useLocalStorage(key, false); 
+
     const handleClick = (e) => {
-        e.preventDefault();
-        console.log(id)
+        e.preventDefault(); 
+        setLiked(!liked);  
     }
 
     return(<div className="wrap-art">
@@ -38,17 +40,14 @@ export const Article = ({id, art_title, art_title_slug, art_excerpt, created_at}
                 </p>
             </div>
             <div className="art-item-links">
-                <ul className="list-links">
+                <ul className="list-links"> 
                     <li className="links-item">
-                        <Link to="#"><ShareComponent className="icon-link" /></Link>
-                    </li>
-                    <li className="links-item">
-                        <Link to="#"><HeartComponent className="icon-link" /></Link>
-                        
                         <FavBtn className="icon-link" liked={liked} onClick={handleClick} />
                     </li>
                     <li className="links-item">
-                        <Link to={`/${art_title_slug}`}><NextComponent className="icon-link" /></Link>
+                        <Link to={`/${art_title_slug}`}>
+                            <NextComponent className='icon-link' />
+                        </Link>
                     </li>
                 </ul>
             </div>

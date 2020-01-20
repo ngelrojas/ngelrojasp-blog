@@ -13,7 +13,7 @@ const NavMenu = () => (
         <ul className="wrapper-menu">
             <li className="menu__item"><Link to='/'><HomeLogo className="logo" /></Link></li>
             <li className="menu__item"><Link to='/topics'><TopiComponent className="logo" /></Link></li>
-            <li className="menu__item"><Link  to='/angel-rojas'><UserComponent className="logo" /></Link></li>
+            <li className="menu__item"><Link  to='/about-me'><UserComponent className="logo" /></Link></li>
             <li className="menu__item"><Link  to='/contact'><PbComponent className="logo" /></Link></li>
             <li className="menu__item"><Link to='/news'><NewsComponent className="logo" /></Link></li>
         </ul>
