@@ -71,7 +71,7 @@ class Header extends React.Component{
                                 {
                                    filterArticles.map(artis => 
                                    <li key={artis.id}>
-                                        <Link onClick={()=>this.setState({searchItem: ''})} to={`/${artis.art_title_slug}`}>{artis.art_title.toUpperCase()}</Link></li>) 
+                                       <Link onClick={()=>this.setState({searchItem: ''})} to={`/post/${artis.art_title_slug}`}>{artis.art_title.toUpperCase()}</Link></li>) 
                                 } 
                             </ul> 
                         ): '' 

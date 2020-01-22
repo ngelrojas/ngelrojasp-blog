@@ -21,7 +21,7 @@ export const App = () => (
                 <Route path="/about-me" component={AboutMe}></Route>
                 <Route path="/post/:slug" component={DescripComponent}></Route>
                 <Route path="/topics" component={TopicsComponent}></Route>
-                <Route path="/catetory/:subtopic" component={SubTopics}></Route>
+                <Route path="/topics/?category=:topic" component={SubTopics}></Route>
 
             </Switch>
 

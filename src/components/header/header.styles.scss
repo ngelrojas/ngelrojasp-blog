@@ -2,7 +2,9 @@
     background-color: #dddddd;
     padding-top: 0.7%;
     padding-bottom: 0.7%;
-
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     .header{
         position: relative;
         .header__wrapp-logo{

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ListCards } from '../../components/list-cards/list-cards.component.jsx';
 import API from '../../config/config.jsx';
+import axios from 'axios';
 import './topics.styles.scss';
 
 
@@ -16,8 +17,7 @@ class TopicsComponent extends React.Component{
     }
 
     getCategories = e =>{
-         window.fetch(API+`api/categories/`, {mode: 'no-cors'})
-            .then(resp => resp.json())
+         axios.get(API+`api/categories`)
             .then(response => {
                 this.setState({
                     data_cat: response.data,

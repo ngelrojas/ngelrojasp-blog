@@ -11,7 +11,7 @@ export const ListCards = props =>{
             
                 {
                     props.data_cat.map(cate =>
-                        <Article key={cate.id} { ...cates } /> 
+                        <Card key={cate.id} { ...cate } /> 
                     ) 
                 }
                 

@@ -1,10 +1,11 @@
 import React from 'react';
 import API from '../../config/config.jsx';
 import { ListArticles } from '../../components/list-articles/list-articles.component.jsx';
-import './home.styles.scss';
+import axios from 'axios';
+import './sub-topics.styles.scss';
 
 
-class Home extends React.Component{
+class SubTopics extends React.Component{
     constructor(){
         super();
         this.state = {
@@ -13,16 +14,22 @@ class Home extends React.Component{
         }
     }
 
-    componentDidMount(){
-        this.setState({isLoading: true});
-        window.fetch(API+`api/articles`)
-            .then(res=>res.json())
+    getSubCategories =()=>{
+        let subtopic = this.props.match.params.subtopic;
+        window.fetch('https://apiblog.ngelrojasp.com/api/categories/'+subtopic)
+            .then(resp => resp.json()) 
             .then(response => {
+                console.log(response.data) 
                 this.setState({
                     data_post: response.data,
                     isLoading: false
                 }) 
-            })        
+            })
+    }
+
+    componentDidMount(){
+        this.setState({isLoading: true});
+        this.getSubCategories();        
     }
 
     render(){
@@ -41,8 +48,7 @@ class Home extends React.Component{
         return(
             <main>
                 <div className="home-page">
-                <h1>WELCOME TO MY PAGE ;) </h1>
-                <ListArticles data_post={data_post}/>
+                    <ListArticles data_post={data_post}/>
                 </div>                
             </main>    
         ) 
@@ -50,4 +56,4 @@ class Home extends React.Component{
     
 };
 
-export default Home;
+export default SubTopics;

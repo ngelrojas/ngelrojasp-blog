@@ -14,7 +14,7 @@ export const ListArticles = props =>{
                 
                 {
                     props.data_post.map(posts =>
-                        <Article key={posts.id} { ...posts } /> 
+                        <Article key={posts.id || posts.idarticle} { ...posts } /> 
                     ) 
                 }
                 
