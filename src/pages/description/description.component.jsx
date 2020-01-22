@@ -23,6 +23,7 @@ class DescripComponent extends React.Component{
         })
         .then(res => {
              let res_data = res.data;
+             console.log(res.data)
              this.setState({
                  data_post: res_data[0],
                  isLoading: false
@@ -43,7 +44,9 @@ class DescripComponent extends React.Component{
             <div className="content-desc">
                 <div className="content-desc__head">
                     <figure className="head__img">
-                        <img src={`${PATH+'api/storage/blog-images/articles/'+this.state.data_post.art_img_excerpt}`} alt={this.state.data_post.art_title_slug} />
+                        <img src={ 
+                            `${PATH+'api/storage/blog-images/articles/'+this.state.data_post.art_img_excerpt}`
+                            } alt={this.state.data_post.art_title_slug} />
                     </figure>
                     
                     <h1>{this.state.data_post.art_title}</h1>

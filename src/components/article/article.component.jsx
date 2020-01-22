@@ -20,7 +20,7 @@ export const Article = ({id, art_title, art_title_slug, art_excerpt, created_at}
         <div className="wrapper-art-item">
             <div className="art-item-head">
                 <h6>
-                    <Link to={`/${art_title_slug}`}>{art_title.toUpperCase()}</Link>
+                    <Link to={`/post/${art_title_slug}`}>{art_title.toUpperCase()}</Link>
                 </h6>
                 <div className="art-item-author">
                     <p className="art author">
@@ -34,7 +34,7 @@ export const Article = ({id, art_title, art_title_slug, art_excerpt, created_at}
             </div>
             <div className="art-item-excerpt">
                 <p>
-                    <Link to={`/${art_title_slug}`}>
+                    <Link to={`/post/${art_title_slug}`}>
                         {art_excerpt}
                     </Link>
                 </p>
@@ -45,7 +45,7 @@ export const Article = ({id, art_title, art_title_slug, art_excerpt, created_at}
                         <FavBtn className="icon-link" liked={liked} onClick={handleClick} />
                     </li>
                     <li className="links-item">
-                        <Link to={`/${art_title_slug}`}>
+                        <Link to={`/post/${art_title_slug}`}>
                             <NextComponent className='icon-link' />
                         </Link>
                     </li>

@@ -32,10 +32,10 @@ return(
                 </div>
                 <div className="aboutme__share">
                     <ul>
-                        <li> <Link to='https://github.com/ngelrojasp'><GitHubComponent className="social-icons"/></Link></li>
-                        <li> <Link to='/'><LinkedInComponent className="social-icons" /></Link></li>
-                        <li> <Link to='/'><TwitterComponent className="social-icons" /></Link></li>
-                        <li> <Link to='/'><FComponent className="social-icons"/></Link></li>
+                        <li> <Link to='https://github.com/ngelrojas'><GitHubComponent className="social-icons"/></Link></li>
+                        <li> <Link to='https://www.linkedin.com/in/angel-rojas-software-architect/'><LinkedInComponent className="social-icons" /></Link></li>
+                        <li> <Link to='https://twitter.com/AngelORojasP'><TwitterComponent className="social-icons" /></Link></li>
+                        <li> <Link to='https://www.facebook.com/angelorojasp'><FComponent className="social-icons"/></Link></li>
                     </ul>
                 </div>
             </div>

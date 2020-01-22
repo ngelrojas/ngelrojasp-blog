@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Article } from '../article/article.component.jsx';
 import BackComponent from './assets/back.component.jsx';
 import ForwardComponent from './assets/forward.component.jsx';
-import API from '../../config/config.jsx';
 import './list-articles.styles.scss';
 
 
