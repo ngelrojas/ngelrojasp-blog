@@ -1,7 +1,6 @@
 import React from 'react';
 import API from '../../config/config.jsx';
 import { ListArticles } from '../../components/list-articles/list-articles.component.jsx';
-import axios from 'axios';
 import './sub-topics.styles.scss';
 
 
@@ -19,7 +18,6 @@ class SubTopics extends React.Component{
         window.fetch('https://apiblog.ngelrojasp.com/api/categories/'+subtopic)
             .then(resp => resp.json()) 
             .then(response => {
-                console.log(response.data) 
                 this.setState({
                     data_post: response.data,
                     isLoading: false
