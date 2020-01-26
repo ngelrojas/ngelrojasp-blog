@@ -1,0 +1,54 @@
+$small-desktop: 1366px;
+$large-desktop: 1920px;
+$medium-desktop: 1024px;
+$handheld: 768px;
+$handhelds-landscape: 1024px;
+$mobile: 640px;
+$mobile-landscape: 480px;
+
+@media only screen and (min-width: $small-desktop) {
+    
+    .content-desc{
+        .content-desc-left{
+            .content-desc__head{
+                .head__img{
+                    img{
+                        width: 80%; 
+                    } 
+                }
+                
+                 
+            }
+            .content-desc__body{
+                width: 80%; 
+            }
+        }
+        
+        
+    }
+}
+
+@media only screen and (min-width: $medium-desktop) {
+    
+    .content-desc{
+        .content-desc-left{
+            .content-desc__head{
+                .head__img{
+                    img{
+                        width: 80%; 
+                    } 
+                }
+                h1{
+                    font-size: 14px; 
+                }
+                
+                 
+            }
+            .content-desc__body{
+                width: 80%; 
+            }
+        }
+        
+        
+    }
+}

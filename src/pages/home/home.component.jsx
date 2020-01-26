@@ -13,8 +13,9 @@ class Home extends React.Component{
         }
     }
 
-    componentDidMount(){
+    getArticles = () => {
         this.setState({isLoading: true});
+
         window.fetch(API+`api/articles`)
             .then(res=>res.json())
             .then(response => {
@@ -22,9 +23,12 @@ class Home extends React.Component{
                     data_post: response.data,
                     isLoading: false
                 }) 
-            })        
+            })
     }
 
+    componentDidMount(){
+       this.getArticles(); 
+    }
 
     render(){
         if(this.state.isLoading){

@@ -1,29 +1,33 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #eeeeee;
-    a{
-        text-decoration: none; 
+html{
+    scroll-behavior: smooth;
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #eeeeee;
+        a{
+            text-decoration: none; 
+        }
+    }
+    .main__container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 60px 600px 60px;
+        grid-gap: 0.1em;
+        
+        header{
+            grid-column: 1 / span 12; 
+        } 
+
+        main{
+            grid-column: 3 / span 9;
+            margin-top: 5%; 
+        }
+
+        nav{
+            grid-column: 1 / span 1; 
+        } 
     }
 }
-.main__container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 600px 60px;
-    grid-gap: 0.1em;
-    
-    header{
-        grid-column: 1 / span 12; 
-    } 
 
-    main{
-        grid-column: 3 / span 9;
-        margin-top: 5%; 
-    }
-
-    nav{
-        grid-column: 1 / span 1; 
-    } 
-}
 
 
 @import 'mq_theme.scss'
