@@ -14,8 +14,8 @@ class SubTopics extends React.Component{
     }
 
     getSubCategories =()=>{
-        let subtopic = this.props.match.params.subtopic;
-        window.fetch('https://apiblog.ngelrojasp.com/api/categories/'+subtopic)
+        let subtopic = this.props.match.params.subtopic; 
+        window.fetch(API+'api/categories/'+subtopic)
             .then(resp => resp.json()) 
             .then(response => {
                 this.setState({
@@ -45,7 +45,7 @@ class SubTopics extends React.Component{
 
         return(
             <main>
-                <div className="home-page">
+                <div className="sub-topics">
                     <ListArticles data_post={data_post}/>
                 </div>                
             </main>    

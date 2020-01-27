@@ -7,7 +7,7 @@ import './list-cards.styles.scss';
 export const ListCards = props =>{
     
     return(
-        <div className="list-topic">
+        <div className="list-cards">
             
                 {
                     props.data_cat.map(cate =>

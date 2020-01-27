@@ -1,5 +1,11 @@
-.home-page{
+$tablet: 768px;
+
+.sub-topics{
     margin-top: 5%;
+    font-size:1.5rem;
+    @media only screen and (max-width: $tablet){
+        margin-top: 20%; 
+    }
     h1{
         text-align: center;
         color: #A91B28;

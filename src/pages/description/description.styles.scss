@@ -6,7 +6,8 @@ $tablet: 768px;
     margin-top: 5%;
     .loading{
         color:#A91B28;
-        text-align: center; 
+        text-align: center;
+        font-size: 1.5rem; 
     }
 }
 .content-desc{
@@ -20,6 +21,7 @@ $tablet: 768px;
     margin-left: -6%;
     .content-desc-left{
         width: 85%;
+        font-size: 1.5rem;
         .content-desc__head{
             .head__img{
                 text-align: center;
@@ -34,7 +36,7 @@ $tablet: 768px;
             h1{
                 text-align: center;
                 text-transform: uppercase;
-                font-size: 16px;
+                font-size: 1.5rem;
                 @media only screen and (max-width: $laptop){
                     font-size: 14px; 
                 }
@@ -60,9 +62,9 @@ $tablet: 768px;
                 .author{
                     width: 50%;
                     text-align: left;
-                    font-size: 12px;
+                    font-size: 1.2rem;
                     @media only screen and (max-width: $tablet){
-                        font-size: 10px; 
+                        font-size: 1rem; 
                     }
                     color: #595959;
                     text-transform: uppercase; 
@@ -70,9 +72,9 @@ $tablet: 768px;
                 .data{
                     width: 50%;
                     text-align: right;
-                    font-size: 12px;
+                    font-size: 1.2rem;
                     @media only screen and (max-width: $tablet){
-                        font-size: 10px; 
+                        font-size: 1rem; 
                     }
                     color: #595959;
                     text-transform: uppercase; 
@@ -84,7 +86,7 @@ $tablet: 768px;
             width: 68%;
             @media only screen and (max-width: $small-desktop){
                 width: 80%;
-                font-size: 12px; 
+                font-size: 1.5rem; 
             }
             line-height: 30px;
             color: #383838;
@@ -92,7 +94,8 @@ $tablet: 768px;
         }
     }
     .content-desc-right{
-        width: 15%; 
+        width: 15%;
+        font-size: 1.5rem; 
     }    
 }
 

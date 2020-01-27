@@ -8,7 +8,7 @@ class NotFound extends React.Component{
    render(){ 
         return(
             <main>
-                <div className="home-page">
+                <div className="not-found">
                     <h1>PAGE NOT FOUND... </h1> 
                 </div>                
             </main>    
