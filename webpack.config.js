@@ -4,17 +4,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-    entry: path.join(__dirname, 'src','index.js'),
+    entry: path.join(__dirname, 'src', 'index.js'),
     output: {
-        path: path.join(__dirname,'build'),
+        path: path.join(__dirname, 'build'),
         filename: 'index.bundle.js'
     },
-    mode: process.env.NODE_ENV || 'development',
+    mode: process.env.NODE_ENV || 'production',
     resolve: {
-        modules: [path.resolve(__dirname,'src'), 'node_modules'] 
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'] 
     },
     devServer: {
-        contentBase: path.join(__dirname,'src')
+        contentBase: path.join(__dirname, 'src')
     },
     module: {
         rules: [
@@ -40,7 +40,7 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|pdf)$/i,
                 use: [
-                    {loader: 'file-loader'} 
+                    {loader: 'file-loader'}
                 ]
             },
             {
@@ -54,7 +54,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname,'src','index.html') 
-        }) 
+            template: path.join(__dirname, 'src', 'index.html')
+        })
     ]
 }
