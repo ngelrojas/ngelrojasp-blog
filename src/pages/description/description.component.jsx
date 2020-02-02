@@ -25,7 +25,6 @@ class DescripComponent extends React.Component{
         })
         .then(res => {
              let res_data = res.data;
-             console.log(res_data[0])
              this.getRelatedPost(res_data[0].idart);
              this.setState({
                  data_post: res_data[0],
@@ -67,14 +66,15 @@ class DescripComponent extends React.Component{
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content={this.state.data_post.art_title} />
                     <meta property="og:url" content={`${'https://ngelrojasp.com/post/'+this.state.data_post.art_title_slug}` }/>
-                    <meta property="article:section" content={this.state.data_post.art_excerpt} />
-                    <meta property="article:author" content={this.state.data_post.full_name} /> 
+                    <meta property="og:description" content={this.state.data_post.art_excerpt} />
+                    <meta property="og:author" content={this.state.data_post.full_name} /> 
                     <meta property="article:tag" content="python, django, postgresql, docker, rds-aws" />
                     <meta property="article:published_time" content={this.state.data_post.created_at} />
                     <meta property="og:image" content={`${PATH+'api/storage/blog-images/articles/'+this.state.data_post.art_img_excerpt}`} />
                     <meta property="og:image:type" content="image/png" />
                     <meta property="og:image:width" content="800" />
                     <meta property="og:image:height" content="400" />
+                    <meta property="og:site_name" content={`${this.state.data_post.full_name} - Blog`} />
                 
                     <meta name="twitter:title" content={this.state.data_post.art_title} />
                     <meta name="twitter:description" content={this.state.data_post.art_excerpt} />
