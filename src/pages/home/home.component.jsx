@@ -47,11 +47,14 @@ class Home extends React.Component{
         return(
             <main>
                 <Helmet>
+                    <title>...::Ngel Rojas::...</title>
+                    <meta name='description' content="I'm Software Architect, passionate for the new programming 
+                        languages and new technologies, one of my big qualities is to be self-taught, and an eternal learner."/>
                     <meta property="og:local" content="pt_BR" />
                     <meta property="og:type" content="website" />
-                    <meta property="og:title" content="Ngel - Rojas" />
-                    <meta name='description' content="I'm Software Architect, passionate for the new programming 
-                        languages and new technologies, one of my big qualities is to be self-taught, and an eternal learner."/> 
+                    <meta property="og:title" content="Ngel - Rojas" /> 
+                    <meta property="og:description" content="I'm Software Architect, passionate for the new programming 
+                        languages and new technologies, one of my big qualities is to be self-taught, and an eternal learner." />
                     <link rel="canonical" href="https://ngelrojasp.com" />
                     <meta property="og:url" content="https://ngelrojasp.com" />
                     <meta property="og:site_name" content="Ngel - Rojas" />

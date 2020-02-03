@@ -43,8 +43,9 @@ class TopicsComponent extends React.Component{
         return(
             <main>
                 <Helmet>
-                   <meta property="og:local" content="pt_BR" />
-                    
+                    <title>...::Ngel Rojas::...</title>
+                    <meta property="og:local" content="pt_BR" />
+                    <meta name="description" content="All about technology of programming languages, data bases and machine learning." /> 
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content="topics - categories" />
                     <meta property="og:url" content='https://ngelrojasp.com/topics'/>

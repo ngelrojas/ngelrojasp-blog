@@ -49,8 +49,9 @@ class SubTopics extends React.Component{
         return(
             <main>
                 <Helmet>
-                   <meta property="og:local" content="pt_BR" />
-                    
+                    <title>Ngel Rojas | { this.state.sub_topic }</title>
+                    <meta property="og:local" content="pt_BR" />
+                    <meta name="description" content={`all about ${this.state.sub_topic}`}/>
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content={`sub-topic - sub-category - ${this.state.sub_topic}`} />
                     <meta property="og:url" content={`https://ngelrojasp.com/topic/${this.state.sub_topic}`} />

@@ -61,7 +61,8 @@ class DescripComponent extends React.Component{
         return(
         <main>
                 <Helmet>
-                    <title>{this.state.data_post.art_title}</title>
+                    <title>Ngel Rojas | {this.state.data_post.art_title}</title>
+                    <meta name="description" content={this.state.data_post.art_excerpt} />
                     <meta property="og:local" content="pt_BR" />  
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content={this.state.data_post.art_title} />
