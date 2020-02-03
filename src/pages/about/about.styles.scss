@@ -1,5 +1,6 @@
 $tablet: 768px;
 $laptop: 1024px;
+$laptop-mid: 1152px;
 $big_screen: 1920px;
 
 .aboutme{
@@ -20,6 +21,9 @@ $big_screen: 1920px;
         width: 45%; 
         @media only screen and (max-width: $tablet){
             width: 85%; 
+        }
+        @media only screen and (max-width: $laptop-mid){
+            width: 50%; 
         }
         margin: 0 auto;
         padding: 1%;
