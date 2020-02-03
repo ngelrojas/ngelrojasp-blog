@@ -41,7 +41,7 @@ class TopicsComponent extends React.Component{
         }
         const {data_cat} = this.state
         return(
-            <main>
+            <React.Fragment>
                 <Helmet>
                     <title>...::Ngel Rojas::...</title>
                     <meta property="og:local" content="pt_BR" />
@@ -62,10 +62,13 @@ class TopicsComponent extends React.Component{
                     <meta name="twitter:image" content="https://ngelrojasp.com/public/topics.png" />
                     <meta name="twitter:card" content="800_400" /> 
                 </Helmet>
-                <div className="topics">
-                    <ListCards data_cat={data_cat} /> 
-                </div>
-            </main>
+                <main> 
+                    <div className="topics">
+                        <ListCards data_cat={data_cat} /> 
+                    </div>
+                </main>
+            </React.Fragment>
+            
         ) 
     };
 };

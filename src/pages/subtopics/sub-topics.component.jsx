@@ -47,8 +47,8 @@ class SubTopics extends React.Component{
         const {data_post} = this.state 
 
         return(
-            <main>
-                <Helmet>
+            <React.Fragment>
+               <Helmet>
                     <title>Ngel Rojas | { this.state.sub_topic }</title>
                     <meta property="og:local" content="pt_BR" />
                     <meta name="description" content={`all about ${this.state.sub_topic}`}/>
@@ -68,10 +68,13 @@ class SubTopics extends React.Component{
                     <meta name="twitter:image" content={`https://ngelrojasp.com/public/${this.state.sub_topic}.png`} />
                     <meta name="twitter:card" content="800_400" /> 
                 </Helmet>
-                <div className="sub-topics">
-                    <ListArticles data_post={data_post}/>
-                </div>                
-            </main>    
+                <main> 
+                    <div className="sub-topics">
+                        <ListArticles data_post={data_post}/>
+                    </div>                
+                </main>
+            </React.Fragment>
+                
         ) 
     } 
     
